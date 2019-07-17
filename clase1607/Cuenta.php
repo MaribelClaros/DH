@@ -30,11 +30,11 @@ abstract class Cuenta
     return $this->fechaUltimoMovimiento;
   }
 
-  public abstract function debitar($monto, $medio);
+  public abstract function debitar($monto, $medio, $fechaUltimoMovimiento);
 
   public function acreditar($monto)
   {
     $saldo += $monto;
-    
+
   }
 }
